@@ -1,6 +1,6 @@
 // array in local storage for registered users
 let users = JSON.parse(localStorage.getItem('users'))
-    || [{ username: "admin", email: "admin@themesbrand.com", password: "123456" }];
+    || [{ username: "Will", email: "will@pixelczar.com", password: "password" }];
 
 export function configureFakeBackend() {
 
