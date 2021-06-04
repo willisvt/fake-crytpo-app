@@ -166,7 +166,7 @@ export default {
               <div class="col-lg-9 col-sm-8">
                 <div class="p-4">
                   <h5 class="text-primary">Welcome Back !</h5>
-                  <p>Skote Crypto Dashboard</p>
+                  <p>Cryptos Dashboard</p>
 
                   <div class="text-muted">
                     <p class="mb-1">

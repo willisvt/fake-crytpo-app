@@ -25,8 +25,8 @@ export default {
   },
   data() {
     return {
-      email: "admin@themesbrand.com",
-      password: "123456",
+      email: "will@pixelczar.com",
+      password: "password",
       submitted: false,
       authError: null,
       tryingToLogIn: false,

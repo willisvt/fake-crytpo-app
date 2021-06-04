@@ -53,7 +53,7 @@ export default {
               </div>
               <div class="media-body align-self-center">
                 <div class="text-muted">
-                  <h5>Henry wells</h5>
+                  <h5>Henry Wells</h5>
                   <p class="mb-1">henrywells@abc.com</p>
                   <p class="mb-0">Id no: #SK0234</p>
                 </div>

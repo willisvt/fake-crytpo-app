@@ -3,30 +3,47 @@ export const menuItems = [
         id: 1,
         label: 'menuitems.dashboards.text',
         icon: 'bx-home-circle',
+        link: '/',
+    },
+    {
+        id: 2,
+        label: 'menuitems.crypto.list.wallet',
+        icon: 'bx-wallet',
+        link: '/crypto/wallet',
+    },
+    {
+        id: 3,
+        label: 'menuitems.crypto.list.buy/sell',
+        icon: 'bx-money',
+        link: '/crypto/buy-sell',
+    },
+    {
+        id: 4,
+        label: 'menuitems.crypto.list.exchange',
+        link: '/crypto/exchange',
+        parentId: 1,
+    },
+    {
+        id: 5,
+        label: 'menuitems.crypto.list.orders',
+        link: '/crypto/orders',
+    },
+    {
+        id: 32,
+        label: "More",
+        parentId: 29,
         subItems: [
             {
-                id: 2,
-                label: 'menuitems.dashboards.list.default',
-                link: '/',
-                parentId: 1
+                id: 51,
+                label: 'menuitems.crypto.list.kycapplication',
+                link: '/crypto/kyc-application',
+                parentId: 45
             },
             {
-                id: 3,
-                label: 'menuitems.dashboards.list.saas',
-                link: '/dashboard/saas',
-                parentId: 1
-            },
-            {
-                id: 4,
-                label: 'menuitems.dashboards.list.crypto',
-                link: '/dashboard/crypto',
-                parentId: 1
-            },
-            {
-                id: 5,
-                label: 'menuitems.dashboards.list.blog',
-                link: '/dashboard/blog',
-                parentId: 1
+                id: 52,
+                label: 'menuitems.crypto.list.icolanding',
+                link: '/crypto/ico-landing',
+                parentId: 45
             },
         ]
     },
@@ -146,281 +163,281 @@ export const menuItems = [
             },
         ]
     },
-    {
-        id: 25,
-        label: 'menuitems.apps.text',
-        icon: 'bx-customize',
-        subItems: [
-            {
-                id: 26,
-                label: 'menuitems.calendar.text',
-                link: '/calendar',
-                parentId: 25
-            },
-            {
-                id: 27,
-                label: 'menuitems.chat.text',
-                link: '/chat',
-                parentId: 25
-            },
-            {
-                id: 28,
-                label: "menuitems.filemanager.text",
-                link: "/apps/file-manager",
-                parentId: 25
-            },
-            {
-                id: 29,
-                label: 'menuitems.email.text',
-                subItems: [
-                    {
-                        id: 30,
-                        label: 'menuitems.email.list.inbox',
-                        link: '/email/inbox',
-                        parentId: 29
-                    },
-                    {
-                        id: 31,
-                        label: 'menuitems.email.list.reademail',
-                        link: '/email/reademail',
-                        parentId: 29
-                    },
-                    {
-                        id: 32,
-                        label: "menuitems.email.list.template.text",
-                        parentId: 29,
-                        subItems: [
-                            {
-                                id: 33,
-                                label: 'menuitems.email.list.template.list.basic',
-                                link: '/email/templates/basic',
-                                parentId: 32
-                            },
-                            {
-                                id: 34,
-                                label: 'menuitems.email.list.template.list.alert',
-                                link: '/email/templates/alert',
-                                parentId: 32
-                            },
-                            {
-                                id: 35,
-                                label: 'menuitems.email.list.template.list.billing',
-                                link: '/email/templates/billing',
-                                parentId: 32
-                            }
-                        ]
-                    }
-                ]
-            },
-            {
-                id: 36,
-                label: 'menuitems.ecommerce.text',
-                subItems: [
-                    {
-                        id: 37,
-                        label: 'menuitems.ecommerce.list.products',
-                        link: '/ecommerce/products',
-                        parentId: 36
-                    },
-                    {
-                        id: 38,
-                        label: 'menuitems.ecommerce.list.productdetail',
-                        link: '/ecommerce/product-detail',
-                        parentId: 36
-                    },
-                    {
-                        id: 39,
-                        label: 'menuitems.ecommerce.list.orders',
-                        link: '/ecommerce/orders',
-                        parentId: 36
-                    },
-                    {
-                        id: 40,
-                        label: 'menuitems.ecommerce.list.customers',
-                        link: '/ecommerce/customers',
-                        parentId: 36
-                    },
-                    {
-                        id: 41,
-                        label: 'menuitems.ecommerce.list.cart',
-                        link: '/ecommerce/cart',
-                        parentId:36
-                    },
-                    {
-                        id: 42,
-                        label: 'menuitems.ecommerce.list.checkout',
-                        link: '/ecommerce/checkout',
-                        parentId: 36
-                    },
-                    {
-                        id: 43,
-                        label: 'menuitems.ecommerce.list.shops',
-                        link: '/ecommerce/shops',
-                        parentId: 36
-                    },
-                    {
-                        id: 44,
-                        label: 'menuitems.ecommerce.list.addproduct',
-                        link: '/ecommerce/add-product',
-                        parentId: 36
-                    },
-                ]
-            },
-            {
-                id: 45,
-                label: 'menuitems.crypto.text',
-                icon: 'bx-bitcoin',
-                subItems: [
-                    {
-                        id: 46,
-                        label: 'menuitems.crypto.list.wallet',
-                        link: '/crypto/wallet',
-                        parentId: 45
-                    },
-                    {
-                        id: 47,
-                        label: 'menuitems.crypto.list.buy/sell',
-                        link: '/crypto/buy-sell',
-                        parentId: 45
-                    },
-                    {
-                        id: 48,
-                        label: 'menuitems.crypto.list.exchange',
-                        link: '/crypto/exchange',
-                        parentId: 45
-                    },
-                    {
-                        id: 49,
-                        label: 'menuitems.crypto.list.lending',
-                        link: '/crypto/lending',
-                        parentId: 45
-                    },
-                    {
-                        id: 50,
-                        label: 'menuitems.crypto.list.orders',
-                        link: '/crypto/orders',
-                        parentId: 45
-                    },
-                    {
-                        id: 51,
-                        label: 'menuitems.crypto.list.kycapplication',
-                        link: '/crypto/kyc-application',
-                        parentId: 45
-                    },
-                    {
-                        id: 52,
-                        label: 'menuitems.crypto.list.icolanding',
-                        link: '/crypto/ico-landing',
-                        parentId: 45
-                    }
-                ]
-            },
-            {
-                id: 53,
-                label: 'menuitems.projects.text',
-                subItems: [
-                    {
-                        id: 54,
-                        label: 'menuitems.projects.list.grid',
-                        link: '/projects/grid',
-                        parentId: 53
-                    },
-                    {
-                        id: 55,
-                        label: 'menuitems.projects.list.projectlist',
-                        link: '/projects/list',
-                        parentId: 53
-                    },
-                    {
-                        id: 56,
-                        label: 'menuitems.projects.list.overview',
-                        link: '/projects/overview',
-                        parentId: 53
-                    },
-                    {
-                        id: 57,
-                        label: 'menuitems.projects.list.create',
-                        link: '/projects/create',
-                        parentId: 53
-                    }
-                ]
-            },
-            {
-                id: 58,
-                label: 'menuitems.tasks.text',
-                subItems: [
-                    {
-                        id: 59,
-                        label: 'menuitems.tasks.list.tasklist',
-                        link: '/tasks/list',
-                        parentId: 58
-                    },
-                    {
-                        id: 60,
-                        label: 'menuitems.tasks.list.kanban',
-                        link: '/tasks/kanban',
-                        parentId: 58
-                    },
-                    {
-                        id: 61,
-                        label: 'menuitems.tasks.list.createtask',
-                        link: '/tasks/create',
-                        parentId: 58
-                    }
-                ]
-            },
-            {
-                id: 62,
-                label: 'menuitems.contacts.text',
-                icon: 'bxs-user-detail',
-                subItems: [
-                    {
-                        id: 63,
-                        label: 'menuitems.contacts.list.usergrid',
-                        link: '/contacts/grid',
-                        parentId: 62
-                    },
-                    {
-                        id: 64,
-                        label: 'menuitems.contacts.list.userlist',
-                        link: '/contacts/list',
-                        parentId: 61
-                    },
-                    {
-                        id: 65,
-                        label: 'menuitems.contacts.list.profile',
-                        link: '/contacts/profile',
-                        parentId: 61
-                    }
-                ]
-            },
-            {
-                id: 66, 
-                label: "menuitems.blog.text",
-                icon: "bx-detail",
-                subItems: [
-                    {
-                        id: 67,
-                        label: 'menuitems.blog.list.bloglist',
-                        link: '/blog/list',
-                        parentId: 66
-                    },
-                    {
-                        id: 68,
-                        label: 'menuitems.blog.list.grid',
-                        link: '/blog/grid',
-                        parentId: 66
-                    },
-                    {
-                        id: 69,
-                        label: 'menuitems.blog.list.detail',
-                        link: '/blog/detail',
-                        parentId: 66
-                    }
-                ]
-            },
-        ]
-    },
+    // {
+    //     id: 25,
+    //     label: 'menuitems.apps.text',
+    //     icon: 'bx-customize',
+    //     subItems: [
+    //         {
+    //             id: 26,
+    //             label: 'menuitems.calendar.text',
+    //             link: '/calendar',
+    //             parentId: 25
+    //         },
+    //         {
+    //             id: 27,
+    //             label: 'menuitems.chat.text',
+    //             link: '/chat',
+    //             parentId: 25
+    //         },
+    //         {
+    //             id: 28,
+    //             label: "menuitems.filemanager.text",
+    //             link: "/apps/file-manager",
+    //             parentId: 25
+    //         },
+    //         {
+    //             id: 29,
+    //             label: 'menuitems.email.text',
+    //             subItems: [
+    //                 {
+    //                     id: 30,
+    //                     label: 'menuitems.email.list.inbox',
+    //                     link: '/email/inbox',
+    //                     parentId: 29
+    //                 },
+    //                 {
+    //                     id: 31,
+    //                     label: 'menuitems.email.list.reademail',
+    //                     link: '/email/reademail',
+    //                     parentId: 29
+    //                 },
+    //                 {
+    //                     id: 32,
+    //                     label: "menuitems.email.list.template.text",
+    //                     parentId: 29,
+    //                     subItems: [
+    //                         {
+    //                             id: 33,
+    //                             label: 'menuitems.email.list.template.list.basic',
+    //                             link: '/email/templates/basic',
+    //                             parentId: 32
+    //                         },
+    //                         {
+    //                             id: 34,
+    //                             label: 'menuitems.email.list.template.list.alert',
+    //                             link: '/email/templates/alert',
+    //                             parentId: 32
+    //                         },
+    //                         {
+    //                             id: 35,
+    //                             label: 'menuitems.email.list.template.list.billing',
+    //                             link: '/email/templates/billing',
+    //                             parentId: 32
+    //                         }
+    //                     ]
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 36,
+    //             label: 'menuitems.ecommerce.text',
+    //             subItems: [
+    //                 {
+    //                     id: 37,
+    //                     label: 'menuitems.ecommerce.list.products',
+    //                     link: '/ecommerce/products',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 38,
+    //                     label: 'menuitems.ecommerce.list.productdetail',
+    //                     link: '/ecommerce/product-detail',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 39,
+    //                     label: 'menuitems.ecommerce.list.orders',
+    //                     link: '/ecommerce/orders',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 40,
+    //                     label: 'menuitems.ecommerce.list.customers',
+    //                     link: '/ecommerce/customers',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 41,
+    //                     label: 'menuitems.ecommerce.list.cart',
+    //                     link: '/ecommerce/cart',
+    //                     parentId:36
+    //                 },
+    //                 {
+    //                     id: 42,
+    //                     label: 'menuitems.ecommerce.list.checkout',
+    //                     link: '/ecommerce/checkout',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 43,
+    //                     label: 'menuitems.ecommerce.list.shops',
+    //                     link: '/ecommerce/shops',
+    //                     parentId: 36
+    //                 },
+    //                 {
+    //                     id: 44,
+    //                     label: 'menuitems.ecommerce.list.addproduct',
+    //                     link: '/ecommerce/add-product',
+    //                     parentId: 36
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             id: 45,
+    //             label: 'menuitems.crypto.text',
+    //             icon: 'bx-bitcoin',
+    //             subItems: [
+    //                 {
+    //                     id: 46,
+    //                     label: 'menuitems.crypto.list.wallet',
+    //                     link: '/crypto/wallet',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 47,
+    //                     label: 'menuitems.crypto.list.buy/sell',
+    //                     link: '/crypto/buy-sell',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 48,
+    //                     label: 'menuitems.crypto.list.exchange',
+    //                     link: '/crypto/exchange',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 49,
+    //                     label: 'menuitems.crypto.list.lending',
+    //                     link: '/crypto/lending',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 50,
+    //                     label: 'menuitems.crypto.list.orders',
+    //                     link: '/crypto/orders',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 51,
+    //                     label: 'menuitems.crypto.list.kycapplication',
+    //                     link: '/crypto/kyc-application',
+    //                     parentId: 45
+    //                 },
+    //                 {
+    //                     id: 52,
+    //                     label: 'menuitems.crypto.list.icolanding',
+    //                     link: '/crypto/ico-landing',
+    //                     parentId: 45
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 53,
+    //             label: 'menuitems.projects.text',
+    //             subItems: [
+    //                 {
+    //                     id: 54,
+    //                     label: 'menuitems.projects.list.grid',
+    //                     link: '/projects/grid',
+    //                     parentId: 53
+    //                 },
+    //                 {
+    //                     id: 55,
+    //                     label: 'menuitems.projects.list.projectlist',
+    //                     link: '/projects/list',
+    //                     parentId: 53
+    //                 },
+    //                 {
+    //                     id: 56,
+    //                     label: 'menuitems.projects.list.overview',
+    //                     link: '/projects/overview',
+    //                     parentId: 53
+    //                 },
+    //                 {
+    //                     id: 57,
+    //                     label: 'menuitems.projects.list.create',
+    //                     link: '/projects/create',
+    //                     parentId: 53
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 58,
+    //             label: 'menuitems.tasks.text',
+    //             subItems: [
+    //                 {
+    //                     id: 59,
+    //                     label: 'menuitems.tasks.list.tasklist',
+    //                     link: '/tasks/list',
+    //                     parentId: 58
+    //                 },
+    //                 {
+    //                     id: 60,
+    //                     label: 'menuitems.tasks.list.kanban',
+    //                     link: '/tasks/kanban',
+    //                     parentId: 58
+    //                 },
+    //                 {
+    //                     id: 61,
+    //                     label: 'menuitems.tasks.list.createtask',
+    //                     link: '/tasks/create',
+    //                     parentId: 58
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 62,
+    //             label: 'menuitems.contacts.text',
+    //             icon: 'bxs-user-detail',
+    //             subItems: [
+    //                 {
+    //                     id: 63,
+    //                     label: 'menuitems.contacts.list.usergrid',
+    //                     link: '/contacts/grid',
+    //                     parentId: 62
+    //                 },
+    //                 {
+    //                     id: 64,
+    //                     label: 'menuitems.contacts.list.userlist',
+    //                     link: '/contacts/list',
+    //                     parentId: 61
+    //                 },
+    //                 {
+    //                     id: 65,
+    //                     label: 'menuitems.contacts.list.profile',
+    //                     link: '/contacts/profile',
+    //                     parentId: 61
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 66, 
+    //             label: "menuitems.blog.text",
+    //             icon: "bx-detail",
+    //             subItems: [
+    //                 {
+    //                     id: 67,
+    //                     label: 'menuitems.blog.list.bloglist',
+    //                     link: '/blog/list',
+    //                     parentId: 66
+    //                 },
+    //                 {
+    //                     id: 68,
+    //                     label: 'menuitems.blog.list.grid',
+    //                     link: '/blog/grid',
+    //                     parentId: 66
+    //                 },
+    //                 {
+    //                     id: 69,
+    //                     label: 'menuitems.blog.list.detail',
+    //                     link: '/blog/detail',
+    //                     parentId: 66
+    //                 }
+    //             ]
+    //         },
+    //     ]
+    // },
     {
         id: 70,
         icon: 'bx-collection',
