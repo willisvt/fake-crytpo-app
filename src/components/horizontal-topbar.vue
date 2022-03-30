@@ -243,9 +243,9 @@ export default {
           toggle-class="header-item"
           variant="black"
         >
-          <template v-slot:button-content>
+          <!-- <template v-slot:button-content>
             <i class="bx bx-customize"></i>
-          </template>
+          </template> -->
 
           <div class="px-lg-2">
             <div class="row no-gutters">
@@ -478,7 +478,7 @@ export default {
           </a>
         </b-dropdown>
 
-        <div class="dropdown d-inline-block">
+        <!-- <div class="dropdown d-inline-block">
           <button
             type="button"
             class="btn header-item noti-icon right-bar-toggle toggle-right"
@@ -486,7 +486,7 @@ export default {
           >
             <i class="bx bx-cog toggle-right"></i>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </header>
