@@ -10,6 +10,29 @@
   <meta content="Skote is a fully featured premium Vuejs admin dashboard template built on top of awesome Bootstrap 5" name="description" />
   <!-- <link href="/css/app-rtl.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
   <link href="/css/bootstrap-rtl.min.css" id="app-style" rel="stylesheet" type="text/css"> -->
+  <script type="text/javascript">
+    (function() {
+      var didInit = false;
+      function initMunchkin() {
+        if(didInit === false) {
+          didInit = true;
+          Munchkin.init('804-YYG-163');
+        }
+      }
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = '//munchkin.marketo.net/munchkin.js';
+      s.onreadystatechange = function() {
+        if (this.readyState == 'complete' || this.readyState == 'loaded') {
+          initMunchkin();
+        }
+      };
+      s.onload = initMunchkin;
+      document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+    </script>
+
 </head>
 
 <body>
